@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text=${sms1}></h1>
+<h1 th:text=${sms2}></h1>
+<p><a href="chorrada1">Primera chorrada</a></p>
+<p><a href="chorrada2">Segunda chorrada</a></p>
+<p><a href="chorrada3">Tercera chorrada</a></p>
+<th:block th:each="i: ${#numbers.sequence(1, 100, 2)}">
+    <span th:text="${i}"></span>
+</th:block>
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
